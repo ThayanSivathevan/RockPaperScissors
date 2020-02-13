@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>A Multiplayer Game</title>
+		<style>
+			canvas {
+				width: 800px;
+				height: 700px;
+				border: 5px solid black;
+			}
+		</style>
+			<script src="/socket.io/socket.io.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<canvas id="canvas"></canvas>
+			<img src="/static/rock.jpg" alt="ROCK" id="rock" height="0" width="0">
+			<img src="/static/paper.jpg" alt="PAPER" id="paper" height="0" width="0">
+			<img src="/static/scissors.jpg" alt="SCISSORS" id="scissors" height="0" width="0">
+			<img src="/static/submit.jpg" alt="TITLE" id="submit" height="0" width="0">
+		</div>
+	</body>
+	<script src="/static/game.js"></script>
+</html>
