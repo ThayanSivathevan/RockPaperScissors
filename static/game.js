@@ -124,8 +124,16 @@ socket.on('draw', function() {
 	context.drawImage(scissors, buttonX, buttonY3, bWidth, bHeight);
 
 
+	context.fillStyle = 'black';
+	context.fillRect(buttonXS-fill, buttonYS-fill, bWidth+fill*2, bHeight+fill*2);
 	context.fillStyle = 'green';
 	context.fillRect(buttonXS, buttonYS, bWidth, bHeight);
+
+	context.fillStyle='white';
+	context.fillText("Submit",buttonXS+18,buttonYS+bHeight/2-inc);
+
+	context.fillStyle = 'black';
+
 	if(submit){
 		context.fillText("Waiting for other player",450,50);
 	}
